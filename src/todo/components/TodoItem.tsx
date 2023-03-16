@@ -1,23 +1,20 @@
 import { Todo } from '../interfaces/interfaces'
 
 interface props {
-    todo: Todo[];
+    todo: Todo;
 }
 
-export const TodoItem = (props: props) => {
-    const { todo } = props
+export const TodoItem = ({todo}: props) => {
+    
+    const handleDbClick = () => {
+        console.log("double click: ", todo.description)
+    }
 
   return (
-    <>
-         {
-            todo.map(tod => 
-                <li 
-                    key={tod.id}
-                >
-                    {tod.description}
-                </li>
-            )
-        }
-    </>
+        <li 
+            onDoubleClick={handleDbClick}
+        >
+            {todo.description}
+        </li>       
   )
 }

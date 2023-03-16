@@ -10,7 +10,9 @@ export const TodoList = () => {
 
   return (
     <ul>
-       <TodoItem todo={todos}/>        
+        {
+            todos.map(todo => <TodoItem key={todo.id} todo={todo}/>  )        
+        }          
     </ul>
   )
 }
