@@ -7,7 +7,7 @@ interface props {
 export const TodoItem = ({todo}: props) => {
     
     const handleDbClick = () => {
-        console.log("double click: ", todo.description)
+        console.log("double click: ", todo.description);
     }
 
   return (
