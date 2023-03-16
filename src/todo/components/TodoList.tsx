@@ -1,13 +1,24 @@
-import React from 'react'
+import { useContext } from 'react'
+import { TodoContext } from '../context/TodoContext';
 
 export const TodoList = () => {
+
+    const {todoState} = useContext(TodoContext)
+    const {todos} = todoState;
+    console.log("todos: ", todos);
+    
   return (
     <ul>
-            <li>Todo 1</li>
-            <li>Todo 2</li>
-            <li>Todo 3</li>
-            <li>Todo 4</li>
-            <li>Todo 5</li>
+        {
+            todos.map(todo => 
+                <li 
+                    key={todo.id}
+                >
+                    {todo.description}
+                </li>
+            )
+        }
+            
     </ul>
   )
 }
