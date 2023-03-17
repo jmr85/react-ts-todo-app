@@ -8,18 +8,53 @@ const INITIAL_STATE: TodoState = {
   todos: [
     {
       id: 1,
-      description: "buy coffee at the corner store",
+      description: "Buy coffee at the corner store",
       completed: true
     },
     {
       id: 2,
-      description: "go see the dentist for a toothache",
+      description: "Pay rent",
       completed: false
     },
     {
       id: 3,
-      description: "buy coke",
+      description: "Buy coke",
       completed: false
+    },
+    {
+      id: 4,
+      description: "Walk the dog",
+      completed: true
+    },   
+    {
+      id: 5,
+      description: "Buy groceries",
+      completed: false
+    },    
+    {
+      id: 6,
+      description: "Call mom",
+      completed: false
+    },    
+    {
+      id: 7,
+      description: "Finish homework",
+      completed: true
+    },
+    {
+      id: 8,
+      description: "Go for a run",
+      completed: false
+    },
+    {
+      id: 9,
+      description: "Attend dentist appointment",
+      completed: false
+    },
+    {
+      id: 10,
+      description: "Read a book",
+      completed: true
     }
   ],
   completed: 0,

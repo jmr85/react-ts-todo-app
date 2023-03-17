@@ -14,6 +14,7 @@ export const TodoItem = ({todo}: props) => {
 
   return (
         <li style={{
+            listStyle: 'none',
             cursor: 'pointer',
             textDecoration: todo.completed ? 'line-through': ''
         }}
