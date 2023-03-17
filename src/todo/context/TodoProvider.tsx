@@ -9,7 +9,7 @@ const INITIAL_STATE: TodoState = {
     {
       id: 1,
       description: "buy coffee at the corner store",
-      completed: false
+      completed: true
     },
     {
       id: 2,
